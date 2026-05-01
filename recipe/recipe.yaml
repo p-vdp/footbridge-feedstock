@@ -13,7 +13,7 @@ source:
   sha256: eeaed01d65ebe7c1035ecc08c38aa5fa48b552028c33b3f110ff1f03465e1e3b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -24,11 +24,12 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - geojson
-    - geopandas >=1.1.0
-    - matplotlib-base >=3.10.0
-    - pyarrow
-    - xmltodict >=1.0.0
+    - gdal >=3.8
+    - geojson >=3.2
+    - geopandas >=1.1
+    - matplotlib-base >=3.9
+    - pyarrow >=24
+    - xmltodict >=1.0
 
 tests:
   - python:
