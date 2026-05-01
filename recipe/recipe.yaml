@@ -28,7 +28,7 @@ requirements:
     - geojson >=3.2
     - geopandas >=1.1
     - matplotlib-base >=3.9
-    - pyarrow >=24
+    - pyarrow >=20
     - xmltodict >=1.0
 
 tests:
